@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            >
+
+            <include layout="@layout/banner"/>
+            <!--            <android.support.v4.view.ViewPager
+                            android:id="@+id/viewpager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" >
+
+                            <android.support.v4.view.PagerTabStrip
+                                android:id="@+id/tabstrip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center" />
+                        </android.support.v4.view.ViewPager>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="#28D67D"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/iv_team"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group_white_48dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_team"
+                        android:text="@string/team"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#D7814B"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp">
+
+                    <ImageView
+                        android:id="@+id/iv_fund"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group_white_48dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_fund"
+                        android:text="@string/fund"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="#D7BF65"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp">
+
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/iv_tool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group_white_48dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_tool"
+                        android:text="@string/tool"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/iv_hot_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:src="@drawable/hot_team"
+                />
+
+            <ListView
+                android:id="@+id/lv_hot_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_hot_team"></ListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/iv_hot_fund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:src="@drawable/hot_fund"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/iv_hot_fund"
+                >
+
+                <ListView
+                    android:id="@+id/lv_fund_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/iv_hot_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:src="@drawable/hot_tool"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/iv_hot_tool"
+                >
+
+                <ListView
+                    android:id="@+id/lv_tool_team"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

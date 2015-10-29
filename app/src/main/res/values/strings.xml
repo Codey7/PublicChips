@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">PublicChips</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">首页</string>
+    <string name="ranking">排行</string>
+    <string name="label">标签</string>
+    <string name="message">消息</string>
+    <string name="press_again_backrun">再按一次返回键退出</string>
+    <string name="team">梦想TEAM</string>
+    <string name="fund">梦想FUND</string>
+    <string name="tool">梦想TOOL</string>
+    <string name="initiate">发起</string>
+    <string name="support">支持</string>
+    <string name="fans">粉丝</string>
+    <string name="attention">关注</string>
+    <string name="credit">信用</string>
+    <string name="withdrawals_record">提现记录</string>
+    <string name="add_friends">添加好友</string>
+    <string name="edit_info">编辑资料</string>
+    <string name="sweep">扫一扫</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="settings">设置</string>
+    <string name="how">如何玩转众筹</string>
+    <string name="agree">我同意</string>
+    <string name="project_name">项目名称</string>
+    <string name="project_intro">项目介绍</string>
+    <string name="project_img">项目图片</string>
+    <string name="project_category">项目类别</string>
+    <string name="project_details">项目详情</string>
+
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间错误</string>
+    <string name="qr_code">扫描二维码可以添加好友</string>
+</resources>

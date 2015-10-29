@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.mrcodey.main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mrcodey.activity.AddProject"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.mrcodey.activity.ProjectDetails"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.mrcodey.Chat"
+            android:windowSoftInputMode="adjustPan"
+            ></activity>
+        <activity android:name="com.mrcodey.activity.DecodeQRCode"></activity>
+        <activity android:name="com.mrcodey.activity.WithdrawRecord"></activity>
+        <activity android:name="com.mrcodey.activity.MyCollect"></activity>
+        <activity android:name="com.mrcodey.activity.EditInfo"></activity>
+        <activity android:name="com.mrcodey.activity.HowToPlay"></activity>
+        <activity android:name="com.mrcodey.activity.Settings"></activity>
+    </application>
+
+</manifest>

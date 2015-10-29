@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="25"
+        android:background="#2196F3"
+        >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_chevron_left_white_36dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/project_details"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="center"
+            android:src="@drawable/p1"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            >
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/emo_im_cool"
+                />
+
+            <TextView
+                android:id="@+id/team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/avatar"
+                android:layout_marginLeft="80dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="月光下的独角猫"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/team_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/team_name"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="2015-5-6发起"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/back_shape"
+                android:gravity="right"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_reach_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="3dp"
+                    android:text="140%"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_reach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_reach_num"
+                    android:layout_centerHorizontal="true"
+                    android:text="已达成"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl1"
+        >
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:divider="@drawable/divder"
+            android:dividerPadding="0dp"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_financing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="已筹资"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_financing_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_financing"
+                    android:layout_centerHorizontal="true"
+                    android:text="1918元"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="目标"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_goal_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_goal"
+                    android:layout_centerHorizontal="true"
+                    android:text="1850元"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="已支持"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_support_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_support"
+                    android:layout_centerHorizontal="true"
+                    android:text="1918元"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="剩余时间"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_time_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_time"
+                    android:layout_centerHorizontal="true"
+                    android:text="已结束"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/l1"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_light"
+            ></View>
+
+        <View
+            android:id="@+id/v_line1"
+            android:layout_width="0.5dp"
+            android:layout_alignBottom="@+id/rl3"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/v_line"
+            android:background="@android:color/holo_green_light"
+            ></View>
+
+        <RelativeLayout
+            android:id="@id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/v_line1">
+
+            <TextView
+                android:id="@+id/tv_supported"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="已支持"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_su_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_supported"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="14人"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_su_num"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/h3"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_line"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="为山区孩子贡献自己的一份力量"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_toLeftOf="@id/v_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_margin="5dp"
+            android:text="  shape可以绘制矩形环形以及椭圆，所以只需要用椭圆即可，在使用的时候将控件比如imageview或textview的高宽设置成一样就是正圆，solid表示远的填充色，stroke则代表远的边框线，所以两者结合可以实现带边缘的圆，当然也可以直接加上size控制高宽，下面的代码实现效果是一个带白边的红圆。"/>
+
+        <Button
+            android:id="@+id/bt_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_details"
+            android:layout_below="@+id/tv_details"
+            android:background="@android:color/white"
+            android:text="更多>>"
+            android:textColor="@android:color/holo_blue_bright"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:text="评论"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:text="已达成"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_light"
+            android:text="分享"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</FrameLayout>

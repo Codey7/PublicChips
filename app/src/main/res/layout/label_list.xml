@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/emo_im_cool"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/team_name"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#4A4A4A"
+        android:text="asdfasdfasdfasdfasdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:text="asdfasdfasdfasdf"
+        android:textColor="#969696"
+        android:id="@+id/team_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/team_name"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:text="标签"
+        android:textColor="#969696"
+        android:id="@+id/team_label"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/team_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="#222196F3"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_arrow_forward_white_36dp"/>
+
+
+</RelativeLayout>
